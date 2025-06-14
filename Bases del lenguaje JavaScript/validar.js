@@ -14,10 +14,15 @@ document.getElementById('Formulario').addEventListener('submit', function(event)
     // Aquí puedes agregar más validaciones según sea necesario
     // Validación de campos específicos
     const email = document.getElementById('email');
-    if (!email.value.includes('@'&&'.')) {
+    if (!email.value.includes('@')) {
         alert('El correo electrónico debe contener un "@"');
         event.preventDefault(); // Evita el envío
     }   
+    // Validación de formato de correo electrónico
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        alert('El correo electrónico no es válido');
+        event.preventDefault(); // Evita el envío
+    }
     // Validación de formato de teléfono
     const telefono = document.getElementById('phone');
     if (!/^\d{9}$/.test(telefono.value)) {
@@ -31,6 +36,11 @@ document.getElementById('Formulario').addEventListener('submit', function(event)
         event.preventDefault(); // Evita el envío
     }
 
+       const mensajeMin = document.getElementById('message');
+    if (mensaje.value.length < 5) {
+        alert('El mensaje debe contener más de 5 caracteres');
+        event.preventDefault(); // Evita el envío
+    }
     
     // Llama a la función de validación
     // y evita el envío del formulario si no es válido
