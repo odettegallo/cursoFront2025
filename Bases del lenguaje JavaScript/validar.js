@@ -1,4 +1,3 @@
-
 document.getElementById('Formulario').addEventListener('submit', function(event) {
     // Validación simple de ejemplo
     const campo = document.getElementById('name');
@@ -49,4 +48,20 @@ document.getElementById('Formulario').addEventListener('submit', function(event)
         event.preventDefault(); // Evita el envío si la validación falla
     };
 });
+
+function validar() {
+    let valido = true;
+    const mensaje = document.getElementById('mensaje').value.trim();
+    const errorMensaje = document.getElementById('error-mensaje');
+    errorMensaje.textContent = ""; // Limpia el mensaje anterior
+
+    if (mensaje.length < 5) {
+        errorMensaje.textContent = "Debe tener al menos 5 caracteres.";
+        valido = false;
+    }
+
+    // ...otras validaciones para otros campos...
+
+    return valido;
+}
 
