@@ -1,34 +1,5 @@
-function validar() {
-    const nombre = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const telefono = document.getElementById("phone").value;
-    const mensaje = document.getElementById("message").value;
 
-    if (nombre === "" || email === "" || telefono === "" || mensaje === "") {
-        alert("Por favor, completa todos los campos.");
-        return false;
-    }
-
-    if (!/^[a-zA-Z\s]+$/.test(nombre)) {
-        alert("El nombre solo debe contener letras y espacios.");
-        return false;
-    }
-
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-        alert("Por favor, ingresa un correo electrónico válido.");
-        return false;
-    }
-
-    if (!/^\d{10}$/.test(telefono)) {
-        alert("El teléfono debe contener 10 dígitos.");
-        return false;
-    }
-
-    return true;
-}
-
-// Supón que tu formulario tiene el id "miFormulario"
-document.getElementById('miFormulario').addEventListener('submit', function(event) {
+document.getElementById('Formulario').addEventListener('submit', function(event) {
     // Validación simple de ejemplo
     const campo = document.getElementById('name');
     if (!campo.value) {
@@ -43,14 +14,14 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     // Aquí puedes agregar más validaciones según sea necesario
     // Validación de campos específicos
     const email = document.getElementById('email');
-    if (!email.value.includes('@','.com','.cl','.org','.net','.edu','.gov','.info','.biz','.io','.co','.me','.tv','.xyz','.app','.dev','.tech','.ai','.cloud','.shop','.store','.online','.site','.space','.blog','.design')) {
+    if (!email.value.includes('@'&&'.')) {
         alert('El correo electrónico debe contener un "@"');
         event.preventDefault(); // Evita el envío
     }   
     // Validación de formato de teléfono
     const telefono = document.getElementById('phone');
-    if (!/^\d{10}$/.test(telefono.value)) {
-        alert('El teléfono debe contener exactamente 10 dígitos');
+    if (!/^\d{9}$/.test(telefono.value)) {
+        alert('El teléfono debe contener exactamente 9 dígitos');
         event.preventDefault(); // Evita el envío
     }
     // Validación de caracteres permitidos
@@ -66,6 +37,6 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     // Validación de formulario
     if (!validar()) {
         event.preventDefault(); // Evita el envío si la validación falla
-    }
+    };
 });
 
