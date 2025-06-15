@@ -33,8 +33,8 @@ function validar() {
         return false;
     }
 
-    if (!/^\d{10}$/.test(telefono)) {
-        alert("El teléfono debe contener 10 dígitos.");
+    if (!/^\d{9}$/.test(telefono)) {
+        alert("El teléfono debe contener 9 dígitos.");
         return false;
     }
 
