@@ -1,5 +1,4 @@
-
-document.getElementById('Formulario').addEventListener('submit', function(event) {
+document.getElementById('formulario').addEventListener('submit', function(event) {
     // Validación simple de ejemplo
     const campo = document.getElementById('name');
     if (!campo.value) {
@@ -49,4 +48,3 @@ document.getElementById('Formulario').addEventListener('submit', function(event)
         event.preventDefault(); // Evita el envío si la validación falla
     };
 });
-
