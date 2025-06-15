@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const errorTelefono = document.getElementById("errorPhone");
         const errorMensaje = document.getElementById("errorMessage");
         // Limpiar mensajes de error previos
-        errorNombre.textContent = "El nombre debe contener mínimo 3 letras y espacios.";
+        errorNombre.textContent = "El nombre debe contener mínimo 3 letras";
         errorEmail.textContent = "El email debe ser válido.";
         errorTelefono.textContent = "El teléfono debe contener 9 dígitos.";
         errorMensaje.textContent = "El mensaje debe tener al menos 10 caracteres.";
