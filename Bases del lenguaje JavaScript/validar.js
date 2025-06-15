@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("contactForm");
+    const form = document.getElementById("formulario");
     form.addEventListener("submit", function(event) {
         if (!validar()) {
             event.preventDefault(); // Evita el envío del formulario si la validación falla
