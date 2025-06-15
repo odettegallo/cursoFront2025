@@ -23,6 +23,10 @@ function validar() {
         alert("El nombre solo debe contener letras y espacios.");
         return false;
     }
+    if (nombre.length < 3) {
+        alert("El nombre debe tener al menos 3 caracteres.");
+        return false;
+    }
 
     if (!/^\S+@\S+\.\S+$/.test(email)) {
         alert("Por favor, introduce un correo electrónico válido.");
