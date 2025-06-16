@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function validar() {
-let valido = true;
 
     const nombre = document.getElementById("name").value;
     const email = document.getElementById("email").value;
