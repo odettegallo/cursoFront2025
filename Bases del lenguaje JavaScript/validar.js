@@ -17,6 +17,59 @@ function validar() {
     const mensaje = document.getElementById("message").value;
 
 
+    if (nombre === "" || email === "" || telefono === "" || mensaje === "") {
+        alert("Por favor, completa todos los campos.");
+        return false;
+    }
+
+    if (!/^[a-zA-Z\s]+$/.test(nombre)) {
+        // alert("El nombre solo debe contener letras y espacios.");
+        document.getElementById("errorName").textContent = "El nombre solo debe contener letras y espacios.";   
+        return false;
+    }
+
+    if (nombre.length < 2) {
+        // alert("El nombre debe tener al menos 3 caracteres.");
+        document.getElementById("errorName").textContent = "El nombre debe tener al menos 2 caracteres.";
+        return false;
+    } else {
+        document.getElementById("errorName").textContent = "";
+    }
+
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+        // alert("Por favor, introduce un correo electrónico válido.");
+        document.getElementById("errorEmail").textContent = "Por favor, introduce un correo electrónico válido.";
+        return false;
+    } else {
+        document.getElementById("errorEmail").textContent = "";
+    }
+
+    if (!/^\d{9}$/.test(telefono)) {
+        // alert("El teléfono debe contener 9 dígitos.");
+        document.getElementById("errorPhone").textContent = "El teléfono debe contener 9 dígitos.";
+        return false;
+    } else {
+        document.getElementById("errorPhone").textContent = "";
+    }
+
+    if (mensaje.length < 10) {
+        // alert("El mensaje debe tener al menos 10 caracteres.");
+        document.getElementById("errorMessage").textContent = "El mensaje debe tener al menos 10 caracteres.";
+        return false;
+    } else {
+        document.getElementById("errorMessage").textContent = "";
+    }
+
+    return true;
+
+
+
+}
+
+// Código comentado para validación en tiempo real
+// Descomentar el siguiente código si se desea validar en tiempo real
+
+
 // const nombreInput = document.getElementById("name");
 // nombreInput.addEventListener("input", function() {
 //     const errorNombre = document.getElementById("errorName");
@@ -69,45 +122,6 @@ function validar() {
         // errorTelefono.textContent = "El teléfono debe contener 9 dígitos.";
         // errorMensaje.textContent = "El mensaje debe tener al menos 10 caracteres.";
 
-        if (nombre === "" || email === "" || telefono === "" || mensaje === "") {
-        alert("Por favor, completa todos los campos.");
-        return false;
-    }
-
-    if (!/^[a-zA-Z\s]+$/.test(nombre)) {
-        // alert("El nombre solo debe contener letras y espacios.");
-        document.getElementById("errorName").textContent = "El nombre solo debe contener letras y espacios.";   
-        return false;
-    }
-
-    if (nombre.length < 2) {
-        // alert("El nombre debe tener al menos 3 caracteres.");
-        document.getElementById("errorName").textContent = "El nombre debe tener al menos 2 caracteres.";
-    } else {
-        document.getElementById("errorName").textContent = "";
-        return false;
-    }
-
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-        // alert("Por favor, introduce un correo electrónico válido.");
-        return false;
-    }
-
-    if (!/^\d{9}$/.test(telefono)) {
-        // alert("El teléfono debe contener 9 dígitos.");
-        return false;
-    }
-
-    if (mensaje.length < 10) {
-        // alert("El mensaje debe tener al menos 10 caracteres.");
-        return false;
-    }
-
-    return true;
-
-
-
-}
     
 
 
