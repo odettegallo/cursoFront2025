@@ -1,38 +1,3 @@
-import { Carousel } from "@fancyapps/ui/dist/carousel/";
-import "@fancyapps/ui/dist/carousel/carousel.css";
-
-import { Autoplay } from "@fancyapps/ui/dist/carousel/carousel.autoplay.js";
-import "@fancyapps/ui/dist/carousel/carousel.autoplay.css";
-
-// Inicializa el carrusel con las opciones deseadas
-
-Carousel(container, options, { Autoplay }).init();
-
-const container = document.getElementById("myCarousel");
-const options = {
-    items: 3,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000, // Tiempo entre transiciones en milisegundos
-    autoplayHoverPause: true, // Pausa al pasar el ratón por encima
-    nav: true, // Muestra los botones de navegación
-    navText: ["<span class='carousel-control-prev-icon'></span>", "<span class='carousel-control-next-icon'></span>"],
-    dots: true, // Muestra los puntos de navegación
-    responsive: {
-        0: {
-            items: 1 // Muestra 1 elemento en pantallas pequeñas
-        },
-        600: {
-            items: 2 // Muestra 2 elementos en pantallas medianas
-        },
-        1000: {
-            items: 3 // Muestra 3 elementos en pantallas grandes
-        }
-    }
-};
-
-Carousel(container, options).init();
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
