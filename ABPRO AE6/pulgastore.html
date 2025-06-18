@@ -47,14 +47,15 @@
             <!-- <div class="f-carousel" id="myCarousel" style="--bs-gap: .25rem 1rem;"> -->
             <div class="f-carousel" id="myCarousel">
                 <!-- <div class="col-12 col-sm-6 col-lg-4 mb-4"> -->
-                 <div class="f-carousel__slide">
-                    <img src="img/bolso_sutroina.jpg" alt="Cartera SUTROITIA 1" class="img-fluid rounded shadow">
+                 <div class="f-carousel__slide" >
+                <!-- <div class="f-carousel__slide" data-fancybox="gallery" data-caption="Cartera SUTROITIA 1"></div> -->
+                    <img src="img/bolso_sutroina.jpg" data-fancybox="gallery" alt="Cartera SUTROITIA 1" class="img-fluid rounded shadow">
                 </div>
                 <div class="f-carousel__slide">
-                    <img src="img/Cartera_Roja.png" alt="Producto 2" class="img-fluid rounded shadow">
+                    <img src="img/Cartera_Roja.png" data-fancybox="gallery2" alt="Producto 2" class="img-fluid rounded shadow">
                 </div>
                 <div class="f-carousel__slide">
-                    <img src="img/Cartera_Cafe.png" alt="Producto 3" class="img-fluid rounded shadow">
+                    <img src="img/Cartera_Cafe.png" data-fancybox="gallery3" alt="Producto 3" class="img-fluid rounded shadow">
                 </div>
             </div>
         </section>
@@ -69,8 +70,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
     <script>
           // Initialize the carousel and Fancybox     
-        const container = document.getElementById("myCarousel");
-        const options = {
+    const container = document.getElementById("myCarousel");
+    const options = {
     // Your custom options
         loop: true, 
         autoplay: true,
