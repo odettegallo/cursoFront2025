@@ -1,0 +1,7 @@
+Odette Giselle Gallo Martínez
+
+
+Resumen
+
+agregar los links para usar Fancybox desde CDN css y js, agregar el defer en el js para que lo lea después de cargar el html
+fui a https://fancyapps.com/fancybox/guides/images/ y copie el formato para imagénes 
