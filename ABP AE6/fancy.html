@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fancy</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js" defer></script>
 </head>
 <body>
     <h1>¿Cómo ser elegante?</h1>
@@ -34,6 +33,16 @@
     <footer>
         <p>© 2025 Consejos de Elegancia</p>
     </footer>
-    
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+<script>    
+    Fancybox.bind("[data-fancybox]", {
+  // My custom options
+    Thumbs: {
+        autoStart: true, // Automatically start the thumbs
+        axis: 'x', // Display thumbs horizontally
+      
+    },
+});
+</script>
 </body>
 </html>
