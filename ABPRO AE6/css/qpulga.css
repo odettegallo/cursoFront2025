@@ -80,7 +80,7 @@ nav ul .separator {
     user-select: none;
 }
 
-p {
+p .card-text {
     font-size: 1.2em;
     line-height: 1.6;
     margin: 20px auto;
@@ -407,6 +407,8 @@ footer {
 .card-img-top {
     height: 250px;
     object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .card-body {

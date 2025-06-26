@@ -45,6 +45,52 @@ function mostrarCarrito() {
 
 document.addEventListener('DOMContentLoaded', mostrarCarrito);
 
+
+          // Initialize the carousel and Fancybox     
+    const container = document.getElementById("myCarousel");
+    const options = {
+    // Your custom options
+        loop: true, 
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navigation: true,   
+        pagination: true,
+        perPage: 3,
+        perPageCustom: [
+        [0, 1],
+        [576, 2],
+        [768, 3]
+        ],
+        breakpoints: {
+        576: {
+            perPage: 2,
+        },
+        768: {
+            perPage: 3,
+        }
+        }
+            
+    };
+    Carousel(container, options, { Autoplay }).init();
+
+        Fancybox.bind("[data-fancybox]", {
+            // Custom options for Fancybox
+            Thumbs: {
+                autoStart: true,
+            },
+            Toolbar: {
+                display: {
+
+                    left: ["infobar"],
+                    middle: ["close"],
+                    right: ["slideshow", "thumbs", "fullscreen"]
+
+                }
+            }
+        });
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("formulario");
     form.addEventListener("submit", function(event) {
