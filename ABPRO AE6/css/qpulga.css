@@ -80,6 +80,16 @@ nav ul .separator {
     user-select: none;
 }
 
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+
 .bienvenida, .productos {
     text-align: center;
     margin: 20px;
