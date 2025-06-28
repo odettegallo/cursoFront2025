@@ -11,14 +11,14 @@ header {
     text-align: center;
     background-color: #fff; /* blanco */
     background-image: url(https://img.freepik.com/fotos-premium/elegante-bolso-mujer-que-combina-perfeccion-versatilidad-elegancia-practicidad_942559-948.jpg);
-    background-size: 12%;
+    background-size: 6%;
     padding: 20px 20px 10px 20px;
     border-bottom: 4px solid #b22222; /* rojo vintage */
 }
 
 h1 {
     color: #c2002f; /* rojo charol */
-    font-size: 5.5em;
+    font-size: 3.5em;
     letter-spacing: 4px;
     font-family: 'Brush Script MT', 'Pacifico', 'Dancing Script', cursive, Arial, sans-serif;
     text-shadow: 4px 4px 18px #b22222, 0 0 12px #fff, 2px 2px 0 #222;
