@@ -4,14 +4,6 @@ function mostrarCarrito() {
     tbody.innerHTML = '';
     let total = 0;
 
-    item={
-    "id": 1, // (optional, but good for unique identification)
-    "nombre": "Camiseta Cartera SUTROITIA 1", // The name of the item
-    "precio": 15.000, // The price of a single unit of the item (this is item.precio)
-    "cantidad": 1, // The quantity of this item in the cart
-    "img": "https://example.com/images/camiseta-deportiva.jpg" // URL to the item's image
-}
-
     carrito.forEach((item, idx) => {
         const subtotal = item.precio * item.cantidad;
         total += subtotal;
