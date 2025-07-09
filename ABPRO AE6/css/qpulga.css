@@ -18,7 +18,7 @@ header {
 
 h1 {
     color: #c2002f; /* rojo charol */
-    font-size: 1.5em;
+    font-size: 0.1em;
     letter-spacing: 4px;
     font-family: 'Brush Script MT', 'Pacifico', 'Dancing Script', cursive, Arial, sans-serif;
     text-shadow: 4px 4px 18px #b22222, 0 0 12px #fff, 2px 2px 0 #222;
@@ -28,7 +28,7 @@ h1 {
     background-clip: initial;
     border: 6px solid #000; /* borde negro y más grueso */
     display: inline-block;
-    padding: 10px 40px;
+    padding: 5px 20px;
     border-radius: 18px;
     background-color: #fff;
 }
@@ -45,7 +45,7 @@ nav ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto 5px auto;
+    margin: 0 auto 0px auto;
     background: #444; /* gris oscuro */
     border-bottom: 3px solid #b22222; /* rojo vintage */
 }
@@ -59,7 +59,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff; /* blanco */
     font-weight: bold;
-    font-size: 2.1em;
+    font-size: 1em;
     padding: 10px 15px;
     transition: background 0.2s, color 0.2s;
     font-family: 'Pacifico', 'Dancing Script', 'Brush Script MT', cursive, Arial, sans-serif;
