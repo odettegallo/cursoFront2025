@@ -62,7 +62,7 @@ function validar() {
     const mensaje = document.getElementById("message").value;
 
 
-    if (nombre === "" || email === "" || telefono === "" || mensaje === "") {
+    if (nombre === "" || telefono === "" || email === "" || mensaje === "") {
         alert("Por favor, completa todos los campos.");
         return false;
     }
@@ -81,20 +81,20 @@ function validar() {
         document.getElementById("errorName").textContent = "";
     }
 
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-        // alert("Por favor, introduce un correo electrónico válido.");
-        document.getElementById("errorEmail").textContent = "Por favor, introduce un correo electrónico válido.";
-        return false;
-    } else {
-        document.getElementById("errorEmail").textContent = "";
-    }
-
     if (!/^\d{9}$/.test(telefono)) {
         // alert("El teléfono debe contener 9 dígitos.");
         document.getElementById("errorPhone").textContent = "El teléfono debe contener 9 dígitos.";
         return false;
     } else {
         document.getElementById("errorPhone").textContent = "";
+    }
+        
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+        // alert("Por favor, introduce un correo electrónico válido.");
+        document.getElementById("errorEmail").textContent = "Por favor, introduce un correo electrónico válido.";
+        return false;
+    } else {
+        document.getElementById("errorEmail").textContent = "";
     }
 
     if (mensaje.length < 10) {
